@@ -1,0 +1,7 @@
+The package nanovdb is a header-only library, and does not provide cmake targets
+
+find_path(NANOVDB_INCLUDE_DIR nanovdb/NanoVDB.h)
+if(NANOVDB_INCLUDE_DIR STREQUAL "NANOVDB_INCLUDE_DIR-NOTFOUND")
+  message(FATAL_ERROR "Could not find nanovdb include path.")
+endif()
+target_include_directories(<target> ${NANOVDB_INCLUDE_DIR})

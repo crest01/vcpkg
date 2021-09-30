@@ -1,0 +1,23 @@
+{
+  "name": "nanovdb",
+  "version-string": "af7dae1cff24261f983af0896caf1858762a20d9",
+  "description": "Sparse volume data structure and tools, including the nanovdb branch",
+  "homepage": "https://github.com/dreamworksanimation/openvdb",
+  "dependencies": [
+    "zlib",
+    "openvdb",
+    "blosc",
+    "ilmbase",
+    "openexr",
+    "tbb",
+    "glad",
+    {
+      "name": "vcpkg-cmake",
+      "host": true
+    },
+    {
+      "name": "vcpkg-cmake-config",
+      "host": true
+    }
+  ]
+}

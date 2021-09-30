@@ -1,0 +1,12 @@
+diff --git a/nanovdb/CMakeLists.txt b/nanovdb/CMakeLists.txt
+index 822420e4..4765b8c4 100644
+--- a/nanovdb/CMakeLists.txt
++++ b/nanovdb/CMakeLists.txt
+@@ -328,6 +328,6 @@ endif()
+ 
+ # ---------------------------------------------------------------
+ # copy header files to ${release}/nanovdb/*
+-install(DIRECTORY ${NANOVDB_INCLUDE_DIR}/nanovdb DESTINATION ./)
++install(DIRECTORY ${NANOVDB_INCLUDE_DIR}/nanovdb DESTINATION ${CMAKE_INSTALL_INCLUDEDIR})
+ 
+ # ---------------------------------------------------------------
